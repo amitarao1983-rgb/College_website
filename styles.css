@@ -152,6 +152,16 @@ body {
   margin-bottom: 1.1rem;
 }
 
+.counseling-code {
+  font-size: clamp(1.65rem, 4.2vw, 2.5rem);
+  font-weight: 800;
+  margin: 0 0 0.85rem;
+  max-width: 760px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+}
+
 .pill-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -255,13 +265,35 @@ body {
 
 .committee-grid {
   gap: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.committees-heading {
+  margin: 2rem 0 0.35rem;
+  color: #123f70;
+  font-size: 1.35rem;
+}
+
+.committees-intro,
+.gallery-note {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.98rem;
 }
 
 .committee-card {
+  padding: 0;
+  overflow: hidden;
   border: 1px solid #d7e4f3;
   border-radius: 14px;
   box-shadow: 0 10px 22px rgba(16, 43, 71, 0.14);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.committee-card h4 {
+  margin: 0;
+  padding: 0.75rem 0.9rem 1rem;
+  font-size: 0.98rem;
 }
 
 .committee-card:hover {
@@ -361,6 +393,25 @@ iframe {
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 6px 18px rgba(25, 50, 75, 0.12);
+}
+
+.gallery-linked a {
+  display: block;
+  line-height: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(25, 50, 75, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-linked a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(25, 50, 75, 0.18);
+}
+
+.gallery-linked img {
+  box-shadow: none;
+  display: block;
 }
 
 .equipment-gallery figure {
