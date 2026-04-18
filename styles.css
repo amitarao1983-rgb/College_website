@@ -269,12 +269,11 @@ body {
 }
 
 .committees-heading {
-  margin: 2rem 0 0.35rem;
+  margin: 2rem 0 1rem;
   color: #123f70;
   font-size: 1.35rem;
 }
 
-.committees-intro,
 .gallery-note {
   margin: 0 0 1rem;
   color: var(--muted);
