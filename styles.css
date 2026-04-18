@@ -263,7 +263,7 @@ body {
   font-style: italic;
 }
 
-.committee-lists {
+.committee-signboards {
   gap: 1.2rem;
   margin-top: 0.5rem;
 }
@@ -281,18 +281,32 @@ body {
   font-size: 0.98rem;
 }
 
-.committee-list-card h4 {
+.committee-signboard-card h4 {
   margin: 0 0 0.65rem;
 }
 
-.committee-members {
-  margin: 0;
-  padding-left: 1.15rem;
+.committee-signboard-link {
+  display: block;
+  line-height: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #e8eef6;
+  border: 1px solid #d0dce8;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.committee-members li {
-  margin-bottom: 0.45rem;
-  line-height: 1.45;
+.committee-signboard-link:hover {
+  box-shadow: 0 8px 22px rgba(16, 43, 71, 0.18);
+  transform: translateY(-2px);
+}
+
+.committee-signboard-link img {
+  width: 100%;
+  height: auto;
+  max-height: min(560px, 85vh);
+  object-fit: contain;
+  display: block;
+  margin: 0;
 }
 
 img {
@@ -304,6 +318,12 @@ img {
   border-radius: 8px;
   margin-top: 0.5rem;
   object-fit: cover;
+}
+
+.card .committee-signboard-link img {
+  margin-top: 0;
+  border-radius: 0;
+  object-fit: contain;
 }
 
 .image-card img {
